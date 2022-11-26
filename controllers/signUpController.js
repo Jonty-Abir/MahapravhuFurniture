@@ -25,6 +25,7 @@ const signUpController = async (req, res, next) => {
         userName: user.username,
         email: user.email,
         avatar: user.avatar,
+        mobileNo: user.number,
       };
       const token = await jwt.sign(userObj, process.env.JWT_SECRET, {
         expiresIn: process.env.JWT_EXPIRY,

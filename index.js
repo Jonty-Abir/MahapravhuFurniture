@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 // external imports
 const express = require("express");
 const dotenv = require("dotenv");
-const cookieParser = require("cookie-parser");
 var cors = require("cors");
 // internal imports
 const {
@@ -23,7 +22,7 @@ mongoose
 app.use(
   cors({
     origin: "https://mahapravufurniture.netlify.app",
-    // origin: "http://localhost:3000",
+    // origin: "http://localhost:3002",
     methods: ["GET", "POST", "PUT"],
   })
 );
